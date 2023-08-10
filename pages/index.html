@@ -6,24 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog de Música</title>
   <link rel="stylesheet" href="../styles/estilos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
+
   <header class="header">
-    <nav class="nav">
-      <div class="nav__logo">MÚSICA BLOG</div>
-      <div class="nav__search">
-        <input class="nav__search-input" type="search" placeholder="¿Qué deseas buscar?">
-        <span class="nav__search-icon fa fa-search"></span>
-      </div>
-      <ol class="nav__list">
-        <li class="nav__list-item">
-          <a href="#"><i class="far fa-heart"></i></a>
-        </li>
-        <li class="nav__list-item"><a class="nav__list-item-link" href="#">Artistas</a></li>
-        <li class="nav__list-item"><a class="nav__list-item-link" href="#">Géneros</a></li>
-      </ol>
+    <div class="header__menu">
+      <div class="header__logo-text">MusicMania</div>
+      <button class="header__hamburger-menu">
+        <span class="header__hamburger-bar"></span>
+        <span class="header__hamburger-bar"></span>
+        <span class="header__hamburger-bar"></span>
+      </button>
+    </div>
+    <div class="header__search">
+      <input class="header__search-input" type="text" placeholder="Buscar">
+    </div>
+    <nav class="header__nav">
+      <a class="header__nav-link" href="#">
+        <i class="fas fa-home"></i> Inicio
+      </a>
+      <a class="header__nav-link" href="#">
+        <i class="fas fa-music"></i> Música
+      </a>
+      <a class="header__nav-link" href="#">
+        <i class="fas fa-calendar-alt"></i> Conciertos
+      </a>
     </nav>
   </header>
 
@@ -113,6 +123,18 @@
     </ul>
     <span class="footer__copyright">Copyright 2023, Blog de Música</span>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburgerMenu = document.querySelector(".header__hamburger-menu");
+      const nav = document.querySelector(".header__nav");
+
+      hamburgerMenu.addEventListener("click", function () {
+        nav.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
+
 
 </html>
