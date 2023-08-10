@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog de Música</title>
+  <meta name="description"
+    content="Explora el mundo de la música en nuestro blog musical. Encuentra artículos, artistas destacados y más.">
   <link rel="stylesheet" href="../styles/estilos.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link defer href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preload" href="../img/heroImg.jpg" as="image">
+  <meta name="theme-color" content="#012345">
 </head>
 
 <body>
@@ -15,7 +19,7 @@
   <header class="header">
     <div class="header__menu">
       <div class="header__logo-text">MusicMania</div>
-      <button class="header__hamburger-menu">
+      <button class="header__hamburger-menu" aria-label="Menú de navegación">
         <span class="header__hamburger-bar"></span>
         <span class="header__hamburger-bar"></span>
         <span class="header__hamburger-bar"></span>
@@ -50,7 +54,7 @@
     <div class="featured__grid">
       <div class="featured__card">
         <div class="card-img">
-          <img src="../img/art1.jpg" alt="Artista 1">
+          <img loading="lazy" src="../img/art1.jpg" alt="Artista 1" width="480" height="600">
         </div>
         <div class="card__details">
           <h3 class="featured__card-title">Nombre del Artista</h3>
@@ -59,7 +63,7 @@
       </div>
       <div class="featured__card">
         <div class="card-img">
-          <img src="../img/art1.jpg" alt="Artista 1">
+          <img loading="lazy" src="../img/art1.jpg" alt="Artista 1" width="480" height="600">
         </div>
         <div class="card__details">
           <h3 class="featured__card-title">Nombre del Artista</h3>
@@ -68,7 +72,7 @@
       </div>
       <div class="featured__card">
         <div class="card-img">
-          <img src="../img/art1.jpg" alt="Artista 1">
+          <img loading="lazy" src="../img/art1.jpg" alt="Artista 1" width="480" height="600">
         </div>
         <div class="card__details">
           <h3 class="featured__card-title">Nombre del Artista</h3>
@@ -83,7 +87,7 @@
     <div class="content__articles">
       <div class="content__post">
         <div class="card-img">
-          <img class="img__article" src="../img/produc1.jpg" alt="Artículo 1" width="90px">
+          <img loading="lazy" class="img__article" src="../img/produc1.jpg" alt="Artículo 1" width="300" height="200">
         </div>
         <div class="content__post-details">
           <h3 class="content__post-title">Título del Artículo</h3>
@@ -93,7 +97,7 @@
       </div>
       <div class="content__post">
         <div class="card-img">
-          <img class="img__article" src="../img/produc1.jpg" alt="Artículo 1">
+          <img loading="lazy" class="img__article" src="../img/produc1.jpg" alt="Artículo 1" width="300" height="200">
         </div>
         <div class="content__post-details">
           <h3 class="content__post-title">Título del Artículo</h3>
@@ -103,7 +107,7 @@
       </div>
       <div class="content__post">
         <div class="card-img">
-          <img class="img__article" src="../img/produc1.jpg" alt="Artículo 1">
+          <img loading="lazy" class="img__article" src="../img/produc1.jpg" alt="Artículo 1" width="300" height="200">
         </div>
         <div class="content__post-details">
           <h3 class="content__post-title">Título del Artículo</h3>
@@ -124,16 +128,7 @@
     <span class="footer__copyright">Copyright 2023, Blog de Música</span>
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const hamburgerMenu = document.querySelector(".header__hamburger-menu");
-      const nav = document.querySelector(".header__nav");
-
-      hamburgerMenu.addEventListener("click", function () {
-        nav.classList.toggle("active");
-      });
-    });
-  </script>
+  <script src="../js/menu.js" defer> </script>
 </body>
 
 

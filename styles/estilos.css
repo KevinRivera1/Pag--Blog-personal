@@ -14,8 +14,8 @@
   align-items    : center;
   justify-content: space-between;
   padding        : 1rem;
-  background     : #f88b0f;
-  color          : #fff;
+  background     : #1E2A3A;
+  color          : #FFFFFF;
 }
 
 .header__logo-text {
@@ -222,7 +222,7 @@ a {
 /* Estilos del pie de página */
 .footer {
   margin-top: 30px;
-  background: #f88b0f;
+  background: #1E2A3A;
   padding   : 20px;
 }
 
@@ -235,13 +235,16 @@ a {
   padding   : 0 10px;
   list-style: none;
 }
+.footer__list-item a {
+  color: #FFFFFF;
+}
 
 .footer__copyright {
   margin-top     : 5px;
   display        : flex;
   justify-content: flex-end;
   font-size      : 0.9em;
-  color          : #444;
+  color          : #ffffff;
   font-weight    : bold;
   padding        : 0 10px;
 }
