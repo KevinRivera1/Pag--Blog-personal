@@ -12,7 +12,9 @@ Bienvenido al Blog de Música, un sitio web dedicado a explorar artistas, géner
 
 ## Vista Previa
 
-![Vista Previa](./img/vistaPrevia.png)
+<div align="center">
+  <img src="./img/vistaPrevia.png" alt="Vista Previa">
+</div>
 
 ## Tecnologías Utilizadas
 
